@@ -1,0 +1,125 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+:root {
+  --card-color: #c94343;
+  --card-number: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: rgb(199, 199, 199);
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 500px;
+}
+
+.card {
+  position: absolute;
+  /*color*/
+  background-color: var(--card-color);
+  /*image*/
+  background: url(images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 320px;
+  width: 500px;
+  /*background-image: linear-gradient(45deg, #0045c7, #ff2c7d);
+    */
+  box-shadow: 0 7px 30px rgba(52, 31, 97, 1);
+  padding: 1rem;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.valid {
+  position: relative;
+  margin-top: 0;
+  top: -10px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 10px 5px;
+  text-align: right;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 220px;
+  border: 2px solid #fff;
+  padding: 5px 30px;
+  position: relative;
+}
+
+.card-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.1rem;
+  font-weight: 200;
+  font-family: var(--card-number);
+  margin-top: 20px;
+}
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.username {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.expiry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.exp {
+  padding-right: 10px;
+}
+
+.visa {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.chip {
+  position: relative;
+  margin-top: 50px;
+  padding-left: 10%;
+}
+.chip img {
+  width: 70px;
+}
